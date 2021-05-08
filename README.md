@@ -6,7 +6,10 @@ this is simple example for initiate and run rabbitmq message broker
 RabbitMQ Setup with Docker
 
 We can setup rabbitMQ in our development environment in a couple ways; in this tutorial we'll be using docker.
-In your terminal, run docker run --detach --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3-management
+In your terminal, run 
+
+`docker run --detach --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3-management`
+
 This will create a docker container with a rabbitMQ instance. In your browser, navigate to localhost:15672, you should see the RabbitMQ UI; login with guest as the username and password.
 
 Connect and Publish Messages with RabbitMQ
